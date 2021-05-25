@@ -12,7 +12,7 @@ public class Base {
     public static WebDriver driver;
 
     @BeforeTest
-    public void setup(){
+    public void setup(){                                    //TRY TO USE UTILITY CLASS
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
